@@ -1,1 +1,1 @@
-# service-tempalate
+# service-template
