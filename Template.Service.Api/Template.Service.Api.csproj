@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>af25c71a-0498-4708-bfc1-6fd48c3f512c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Service.Application\Template.Service.Application.csproj" />
+    <ProjectReference Include="..\Template.Service.Contract\Template.Service.Contract.csproj" />
+    <ProjectReference Include="..\Template.Service.Domain\Template.Service.Domain.csproj" />
+    <ProjectReference Include="..\Template.Service.Infrastructure\Template.Service.Infrastructure.csproj" />
+    <ProjectReference Include="..\Template.Common.Mediator\Template.Common.Mediator.csproj" />
+    <ProjectReference Include="..\Template.Common\Template.Common.csproj" />
+  </ItemGroup>
+
+</Project>
